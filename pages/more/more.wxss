@@ -1,0 +1,29 @@
+.info{
+  padding: 10px;
+}
+.title{
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.content{
+  text-indent: 2em;
+  padding-bottom: 10px;
+}
+.trash{
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.img{
+  margin: 0 auto;
+  padding: 10px;
+  width: 320px;
+  height: 250px;
+}
+.tu{
+  margin-top: 0;
+  font-size: 16px;
+  text-align: center;
+  padding-bottom: 10px;
+}

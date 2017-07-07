@@ -1,0 +1,51 @@
+<form bindsubmit="formSubmit" bindreset="formReset"enctype="multipart/form-data">
+    <view class="box">
+        <view class="title">名称</view>
+        <input name="address" class="input-in" placeholder="请输入文本" value=""/>
+    </view>
+
+    <view class="box">
+        <view class="box_le_wr">
+            <view class="title title_le">坐标</view>
+            <view class="btn"> <button  class="btn_r" bindtap="setLocation" >获取位置</button></view>
+        </view>
+        <view><input name="longitude"type="text" class="input-in" placeholder="经度" value="{{location.longitude}}"/></view>
+        <view><input name="latitude" type="text" class="input-in" placeholder="纬度" value="{{location.latitude}}"/></view>
+    </view>
+
+    <view class="box">
+        <view class="title">垃圾桶数</view>
+        <input name="trash" class="input-in" placeholder="请输入数字" value=""/>
+    </view>
+
+    <view class="box">
+        <view class="title">电话</view>
+        <input name="phone" class="input-in" placeholder="请输入数字" value=""/>
+    </view>
+
+    <view class="box">
+        <view class="title">图片</view>
+        <view class="input-in"id="load" bindtap="listenerButtonChooseImage">请选择上传图片</view>
+        <view wx:if="{{showCondition}}">
+            <view class="img"><image name="img" class="imagebar" src="{{source}}" mode="aspecFill" value=""/></view>
+        </view>
+    </view>
+    <view class="box">
+        <view class="title">介绍</view>
+        <textarea name="content" class="input-in"  maxlength="2000" placeholder="请输入内容" value=""></textarea>
+    </view>
+
+    <button class="yes"type="primary" formType="submit">确定</button> 
+</form>
+
+     <!-- 黑框提示并消失 -->  
+<toast hidden="{{toast1Hidden}}" bindchange="toast1Change">  
+        {{notice_str}}  
+</toast>  
+    <!-- 确认框 及 提示框 -->  
+<view class="page__bd">  
+        <modal title="确认" confirm-text="确定" cancel-text="取消" hidden="{{modalHidden}}" mask bindconfirm="confirm_one" bindcancel="cancel_one">  
+            确认提交么？  
+        </modal>   
+</view>  
+

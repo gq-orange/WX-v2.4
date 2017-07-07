@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view class="container">
+<map id="myMap" longitude="{{longitude}}" latitude="{{latitude}}" scale="{{scale}}" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" circles="{{circles}}" bindmarkertap="markertap"  bindregionchange="regionchange"  show-location style="width: 100%; height: {{Height}}px;">
+</map>
+</view>
+
+<view wx:if="{{condition}}" class="on">
+<view class="view">
+    <text class="map_text">{{address}}</text> 
+    <icon class="icon"type="cancel" size="23" 
+    bindtap="mapchange" color=" #707070"/>
+    
+    <navigator class="nav" url="/pages/more/more?title={{address}}&content={{content}}&trash={{trash}}&img={{img}}&cTime={{cTime}}" hover-class="navigator-hover">详情</navigator>
+
+</view>
+    
+
+    <view class="info">
+    <view class="gar">
+        <text class="gar_info">今日垃圾外运量（桶）：{{trash}}</text>
+    </view>
+    <view class="time">
+        <text class="tel-info">更新时间：{{cTime}}</text>
+    </view>
+</view>
+</view>
+
+
+
+

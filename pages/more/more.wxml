@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="info">
+    <view class="title"> {{title}} </view>
+    <view class="content"> {{content}} </view>
+    <view class="trash">今日垃圾外运量（桶）： {{trash}} </view>
+    <view class="classname" wx:if="{{condition}}">
+            <view class="img"><image src="{{img}}" style="width:320px;height:250px;"></image></view>
+    </view>
+    <view class="classname" wx:else>
+            <view class="img"><image src="../../images/hdu.png" style="width:320px;height:250px;"></image></view>
+            
+    </view>
+    <view class="tu">月垃圾外运量走势图</view>
+    <view class="time">更新时间： {{cTime}} </view>
+</view>
+

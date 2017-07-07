@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/map/map",
+    "pages/ranking/ranking",
+    "pages/more/more",
+    "pages/mine/mine"
+  ],
+  "window": {
+    "navigationBarTitleText": "后院阳光·垃圾减量伙伴地图",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": "true"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#65a117",
+    "list": [
+      {
+        "pagePath": "pages/map/map",
+        "text": "地图",
+        "iconPath": "images/place.png",
+        "selectedIconPath": "images/placeselected.png"
+      },
+      {
+        "pagePath": "pages/ranking/ranking",
+        "text": "排名",
+        "iconPath": "images/ranking.png",
+        "selectedIconPath": "images/rankingselected.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "提交",
+        "iconPath": "images/submit.png",
+        "selectedIconPath": "images/submitselected.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

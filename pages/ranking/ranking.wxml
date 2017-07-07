@@ -1,0 +1,14 @@
+<view class="table">
+    <view class="tr bg-w">
+          <view class="th t-left">观察点</view>
+          
+          <view class="th t-right">当前<image src="../../images/change.png" style="width:25px;height:25px;margin-left:5px" mode="aspectFit" bindtap="switchNow"></image></view>
+          
+          <!--<view class="th">昨天<button type="default" style="width:10px;height:10px" bindtap="switchYesterday"></button></view>-->
+    </view>
+    <view wx:for="{{listData}}" class="tr bg-g" wx:key="id">
+          <view class="td t-left">{{item.address}}</view>
+          <view class="td t-right">{{item.trash}}</view>
+          <!--<view class="td">{{item.yesterday}}</view>-->
+    </view>
+</view>

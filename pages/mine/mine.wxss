@@ -1,0 +1,40 @@
+
+.title{
+    padding: 10px;
+    background: #ededed;
+    font-weight: bold;
+}
+.input-in{
+    padding: 10px;
+    color: #888888;
+}
+.box_le_wr{
+   display: block
+}
+.title_le{
+    padding:8px;
+    float: left;
+    width: 67%;
+    height: 30px;
+    
+}
+.btn{
+    float: right;
+    width: 28%;
+}
+.btn_r{
+    height: 46px;
+}
+#load{
+  color:green;
+}
+.img{
+  margin: 0 auto;
+  padding: 10px;
+  width: 320px;
+  height: 250px;
+}
+.imagebar{
+  width: 100%; 
+  height: 250px;
+}
